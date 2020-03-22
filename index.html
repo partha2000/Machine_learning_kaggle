@@ -13086,11 +13086,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">dataset</span> <span class="o">=</span> <span class="s2">&quot;S:\playing with data with python\kaggle course for _intro to machine learning_\iris.csv&quot;</span>  <span class="c1">#use this to assign the data set to a variable.</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="s2">&quot;S:\playing with data with python\kaggle course for _intro to machine learning_\Machine_learning_kaggle\iris.csv&quot;</span>  <span class="c1">#use this to assign the data set to a variable.</span>
 <span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>                 <span class="c1">#use this to read the dataset into a variable.</span>
 <span class="n">descp</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>                           <span class="c1">#This function returns the essential info like mean, median, percentile,</span>
                                           <span class="c1">#and the columns.</span>
@@ -13153,7 +13153,7 @@ By convention, the prediction target is called y. </p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">Species</span>                         <span class="c1">#Selects the prediction target with the dot operator</span>
@@ -13212,7 +13212,7 @@ We select multiple features by providing a list of column names inside brackets.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;SepalLengthCm&#39;</span><span class="p">,</span><span class="s1">&#39;SepalWidthCm&#39;</span><span class="p">,</span><span class="s1">&#39;PetalLengthCm&#39;</span><span class="p">,</span><span class="s1">&#39;PetalWidthCm&#39;</span><span class="p">]</span>         <span class="c1">#this stores the dependent variables</span>
@@ -13230,7 +13230,7 @@ We select multiple features by providing a list of column names inside brackets.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13329,7 +13329,7 @@ We select multiple features by providing a list of column names inside brackets.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>                                                 <span class="c1">#displays the head rows</span>
@@ -13345,7 +13345,7 @@ We select multiple features by providing a list of column names inside brackets.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13434,7 +13434,7 @@ We select multiple features by providing a list of column names inside brackets.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">DecisionTreeRegressor</span>
@@ -13452,7 +13452,7 @@ We select multiple features by providing a list of column names inside brackets.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13488,7 +13488,7 @@ We select multiple features by providing a list of column names inside brackets.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Making predictions on this :&quot;</span><span class="p">)</span>
@@ -13516,7 +13516,7 @@ We select multiple features by providing a list of column names inside brackets.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13594,7 +13594,7 @@ We select multiple features by providing a list of column names inside brackets.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;the predicted values are:&quot;</span><span class="p">)</span>
@@ -13644,7 +13644,7 @@ behaves to outside realworld data. We will be using the mean_absolute_error here
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">mean_absolute_error</span>
@@ -13661,7 +13661,7 @@ behaves to outside realworld data. We will be using the mean_absolute_error here
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13694,7 +13694,7 @@ This is known as in sample scores. This problem need to be solved by splitting t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -13715,7 +13715,7 @@ This is known as in sample scores. This problem need to be solved by splitting t
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -13784,10 +13784,10 @@ We can use a utility function to help compare MAE scores from different values f
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import matplotlib.pyplot as plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">mean_absolute_error</span>
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">DecisionTreeRegressor</span>
 <span class="k">def</span> <span class="nf">model_fit_index</span><span class="p">(</span><span class="n">max_leaf_nodes</span><span class="p">,</span><span class="n">train_X</span><span class="p">,</span> <span class="n">val_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">val_y</span><span class="p">):</span>
@@ -13808,15 +13808,22 @@ We can use a utility function to help compare MAE scores from different values f
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">possible_maxLeafNodes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">max_leaf_nodes</span> <span class="ow">in</span> <span class="n">possible_maxLeafNodes</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mae_score_ar</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">for</span> <span class="n">max_leaf_nodes</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">15</span><span class="p">):</span>
     <span class="n">mae_score</span><span class="o">=</span><span class="n">model_fit_index</span><span class="p">(</span><span class="n">max_leaf_nodes</span><span class="p">,</span><span class="n">train_X</span><span class="p">,</span> <span class="n">val_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">val_y</span><span class="p">)</span>
+    <span class="n">mae_score_ar</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mae_score</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">max_leaf_nodes</span><span class="p">,</span><span class="n">mae_score</span><span class="p">)</span>
-    <span class="c1">#plt.plot(mae_score,max_leaf_nodes)</span>
-    <span class="c1">#plt.show()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">max_leaf_nodes</span><span class="p">,</span><span class="n">mae_score_ar</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s1">&#39;bo&#39;</span><span class="p">)</span>
+    <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Decreasing MAE with max_leaf_nodes&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;max_leaf_nodes&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;mean_absolute_error&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
     <span class="c1">#print(&quot;Max leaf nodes: %d  \t\t Mean Absolute Error:  %d&quot; %(max_leaf_nodes, mae_score))</span>
 </pre></div>
 
@@ -13840,9 +13847,30 @@ We can use a utility function to help compare MAE scores from different values f
 5 2.9689608636977045
 6 2.631578947368421
 7 2.631578947368421
+8 2.631578947368421
 9 2.631578947368421
+10 2.631578947368421
+11 2.631578947368421
+12 2.631578947368421
+13 2.631578947368421
+14 2.631578947368421
 </pre>
 </div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
 </div>
 
 </div>
@@ -13854,7 +13882,7 @@ We can use a utility function to help compare MAE scores from different values f
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>from here we can see that the best result is  given at <b>max_leaf_node</b>= 6 . This dataset is so small in <br>variation 
     that we can easily minimize the mean absolute error <br>
-Use this value to fine tune the model.</p>
+Use this value to fine tune the model.Here there is no problem of the model getting overfitted</p>
 </div>
 </div>
 </div>
@@ -13868,7 +13896,7 @@ Use this value to fine tune the model.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestRegressor</span>
